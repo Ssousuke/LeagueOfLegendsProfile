@@ -1,4 +1,5 @@
 ﻿using Api.Controllers;
+using LolRank.View;
 using LolRank.View.ViewModel;
 using System;
 using System.Collections.Generic;
@@ -41,7 +42,9 @@ namespace Frontend
             }
             if (string.IsNullOrEmpty(viewModelMain.SummonerName))
             {
-                return;
+                WindowProfile profile = new WindowProfile();
+                profile.Show();
+                this.Close();
             }
 
             if (controller.GetSummoner(viewModelMain.Region, viewModelMain.SummonerName))
