@@ -3,20 +3,20 @@ using Newtonsoft.Json;
 
 namespace Api.API
 {
-    public class Summoner_V4 : Api
+    public class League_V4 : Api
     {
-        public Summoner_V4(string region) : base(region)
+        public League_V4(string region) : base(region)
         {
         }
 
-        public SummonerDTO GetSummonerByName(string summonerName)
+        public List<PositionDTO> GetPositions(string summonerId)
         {
-            string path = $"summoner/v4/summoners/by-name/{summonerName}";
+            string path = $"league/v4/positions/by-summoner/{summonerId}";
             var response = GET(GetUri(path));
             string content = response.Content.ReadAsStringAsync().Result;
 
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
-                return JsonConvert.DeserializeObject<SummonerDTO>(content);
+                return JsonConvert.DeserializeObject<List<PositionDTO>>(content);
             return null;
         }
     }
