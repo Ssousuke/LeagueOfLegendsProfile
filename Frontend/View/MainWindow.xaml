@@ -42,7 +42,8 @@
                                 Background="#e99929" 
                                 BorderBrush="#e99929" 
                                 Content="Fechar"
-                                Cursor="Hand">                            
+                                Cursor="Hand" 
+                                Click="ButtonClose_Click">                      
                         </Button>
                         <Button x:Name="ButtonSignIn" 
                                 Background="#e99929" 

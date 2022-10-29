@@ -18,7 +18,7 @@ namespace Frontend
             controller = new ControllerMain();
             viewModelMain = new ViewModelMain();
             InitializeComponent();
-               
+
             this.DataContext = viewModelMain;
         }
 
@@ -43,6 +43,11 @@ namespace Frontend
             {
                 MessageBox.Show("Not Found");
             }
+        }
+
+        private void ButtonClose_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }
