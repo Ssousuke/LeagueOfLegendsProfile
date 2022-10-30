@@ -18,6 +18,9 @@ https://developer.riotgames.com/
 
 Agora você já pode compilar o projeto!
 
+## Referência
+- [Abel Dutra UI](https://www.youtube.com/c/AbelDutraUI/videos)
+
 ## License
 
 MIT
