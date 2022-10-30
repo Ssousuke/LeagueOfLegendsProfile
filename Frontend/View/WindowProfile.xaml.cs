@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Api.Controllers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +20,17 @@ namespace LolRank.View
     /// </summary>
     public partial class WindowProfile : Window
     {
+        ControllerProfile controller;
         public WindowProfile()
         {
+            controller = new ControllerProfile();
             InitializeComponent();
+            this.DataContext = controller.GetContext();
+        }
+
+        private void ButtonClose_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

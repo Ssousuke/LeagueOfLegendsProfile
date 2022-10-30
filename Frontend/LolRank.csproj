@@ -8,12 +8,49 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Assets\logo3.png" />
+    <None Remove="Assets\.png" />
+    <None Remove="Assets\Emblem\Emblem_Bronze.png" />
+    <None Remove="Assets\Emblem\Emblem_Challenger.png" />
+    <None Remove="Assets\Emblem\Emblem_Diamond.png" />
+    <None Remove="Assets\Emblem\Emblem_Gold.png" />
+    <None Remove="Assets\Emblem\Emblem_Grandmaster.png" />
+    <None Remove="Assets\Emblem\Emblem_Iron.png" />
+    <None Remove="Assets\Emblem\Emblem_Master.png" />
+    <None Remove="Assets\Emblem\Emblem_Platinum.png" />
+    <None Remove="Assets\Emblem\Emblem_Silver.png" />
+    <None Remove="Assets\logo2.png" />
     <None Remove="Assets\Rank.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Assets\Rank.png">
+    <Content Include="Assets\Emblem\Emblem_Bronze.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Emblem\Emblem_Challenger.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Emblem\Emblem_Diamond.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Emblem\Emblem_Gold.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Emblem\Emblem_Grandmaster.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Emblem\Emblem_Iron.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Emblem\Emblem_Master.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Emblem\Emblem_Platinum.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Emblem\Emblem_Silver.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\logo2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
@@ -24,12 +61,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Api\Api.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="Assets\logo3.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
   </ItemGroup>
 
   <ItemGroup>

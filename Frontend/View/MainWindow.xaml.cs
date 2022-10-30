@@ -30,18 +30,17 @@ namespace Frontend
             }
             if (string.IsNullOrEmpty(viewModelMain.SummonerName))
             {
+                return;
+            }
+            if (controller.GetSummoner(viewModelMain.SummonerName))
+            {
                 WindowProfile profile = new WindowProfile();
                 profile.Show();
                 this.Close();
             }
-
-            if (controller.GetSummoner(viewModelMain.Region, viewModelMain.SummonerName))
-            {
-                MessageBox.Show("OK");
-            }
             else
             {
-                MessageBox.Show("Not Found");
+                MessageBox.Show("Nenhum jogador encontrado!");
             }
         }
 

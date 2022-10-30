@@ -18,9 +18,8 @@
     <Grid>
         <StackPanel Margin="50">
             <Image x:Name="logo" 
-                   Source="/Assets/logo3.png" 
-                   Width="100" 
-                   Height="100"/>
+                   Source="/Assets/logo2.png" 
+                   Width="250"/>
             <Border Background="white" 
                     Margin="10 20" 
                     CornerRadius="5">
@@ -49,7 +48,7 @@
                                 Background="#e99929" 
                                 BorderBrush="#e99929" 
                                 Margin="15 50" 
-                                Content="Entrar" 
+                                Content="Buscar" 
                                 Click="ButtonSignUp_Click">                            
                         </Button>
                     </StackPanel>

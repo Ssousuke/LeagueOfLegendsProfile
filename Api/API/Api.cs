@@ -31,7 +31,7 @@ namespace Api.API
 
         public string GetKey()
         {
-            return "RGAPI-61761fff-69ee-4917-b8db-03a8df88959a";
+            return "SECRET-KEY AQUI";
         }
 
         protected string GetUri(string path)

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using Api.Utils;
+using System.ComponentModel;
 
 
 namespace Api.ViewModel
@@ -19,7 +20,7 @@ namespace Api.ViewModel
         public string Region
         {
             get { return region; }
-            set { region = value; NotifyPropertyChange("Region"); }
+            set { region = value; Constants.Region = value; NotifyPropertyChange("Region"); }
         }
         string summonerName;
 

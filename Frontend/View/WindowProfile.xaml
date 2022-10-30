@@ -18,7 +18,7 @@
             <StackPanel VerticalAlignment="Top" HorizontalAlignment="Stretch">
                 <Border Width="100" Height="100" Margin="20 20 0 10" BorderBrush="Gray" HorizontalAlignment="Left" BorderThickness="1" CornerRadius="15">
                     <Border.Background>
-                        <ImageBrush ImageSource="/Assets/logo3.png"/>
+                        <ImageBrush ImageSource="{Binding Path=Icon}"/>
                     </Border.Background>
                 </Border>
                 <TextBlock Margin="20 10" FontSize="30" Text="{Binding Path=SummonerName}" Foreground="DarkGray"/>
@@ -37,17 +37,12 @@
                     <TextBlock Text="{Binding Path=Level}" HorizontalAlignment="Center" FontSize="80" Foreground="LightGray"/>
                 </StackPanel>
                 <Grid Margin="20,-34,20,0">
-                    <Button HorizontalAlignment="Left" Style="{StaticResource MaterialDesignFlatButton}" Width="100">
-                        <materialDesign:PackIcon  Kind="Search" Width="24" Height="24"/>
-                    </Button>
-                    <Button HorizontalAlignment="Right" Width="100"  Content="Buscar">
-
-                    </Button>
+                    <Button HorizontalAlignment="Right" Width="100"  Content="Fechar" Cursor="Hand" Background="#e99929" BorderBrush="#e99929" Click="ButtonClose_Click"/>
                 </Grid>
             </StackPanel>
         </Border>
         <StackPanel HorizontalAlignment="Right" Margin="50">
-            <Image Source="{Binding Path=Emblem}" Width="200" Height="200">
+            <Image Source="{ Binding Path=Emblem}" Width="200" Height="200">
                 <Image.Effect>
                     <DropShadowEffect BlurRadius="40" ShadowDepth="1"/>
                 </Image.Effect>
