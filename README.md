@@ -1,5 +1,5 @@
 # League of legends Rank
-## _Visualise o perfil de qualquer jogador_
+## _Visualize o perfil de qualquer jogador_
 
 - Procure o jogador pelo nickname e a região (No momento só tema a região BR1).
 
